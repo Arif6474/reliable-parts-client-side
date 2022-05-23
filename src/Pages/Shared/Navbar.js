@@ -4,6 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
+
 const Navbar = () => {
     const [user] = useAuthState(auth);
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ const Navbar = () => {
     navigate('/login');
     
   };
+  
     return (
         <div className="navbar bg-info text-white font-semibold">
   <div className="navbar-start">

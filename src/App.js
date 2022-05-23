@@ -8,6 +8,7 @@ import Parts from './Pages/Home/Parts';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register';
 import RequireAuth from './Pages/Login/RequireAuth';
+import Notfound from './Pages/NotFound/Notfound';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
 
@@ -22,6 +23,7 @@ function App() {
        <Route path="part" element={<Part></Part>}> </Route>
        <Route path="login" element={<Login></Login>}> </Route>
        <Route path="register" element={<Register></Register>}> </Route>
+       <Route path="*" element={<Notfound></Notfound>}> </Route>
      </Routes>
      <Footer></Footer>
     </div>
