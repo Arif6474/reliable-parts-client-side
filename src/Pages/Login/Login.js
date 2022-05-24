@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const [
@@ -14,7 +15,7 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
       const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
       const [email, setEmail] = useState('');
-      const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+      const [signInWithGoogle, googleUser, googleLoading, gError] = useSignInWithGoogle(auth);
 
     const {
         register,
@@ -29,8 +30,8 @@ const Login = () => {
       const navigate = useNavigate()
       let location = useLocation();
       let from = location.state?.from?.pathname || "/";
-      if(user || gUser) {
-          console.log(user, gUser);
+      if(user || googleUser) {
+          console.log(user, googleUser);
           navigate(from, { replace: true });
       }
      
@@ -38,7 +39,7 @@ const Login = () => {
       if(gError || error){
       LoginError = <p className="text-center text-red-500 pb-2">{gError?.message || error?.message}</p>    
       }
-      if(gLoading || loading){
+      if(googleLoading || loading){
           return <Loading></Loading>
       }
     return (
@@ -104,7 +105,7 @@ const Login = () => {
             </div>
             <p className="font-bold text-warning mb-4" onClick={async () => {
           await sendPasswordResetEmail(email);
-          alert('Sent email');
+          toast('Your password has been reset');
         }}>Forget Password?</p>
             {LoginError}
             <input className="btn btn-accent w-full max-w-xs text-white" type="submit" value="Login" />

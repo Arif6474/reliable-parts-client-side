@@ -32,7 +32,7 @@ const Purchase = () => {
     const address = event.target.address.value;
     const phone = event.target.phone.value;
 
-    const order ={partId ,perPiecePrice, partName , customerName, customer, price, quantity, address, phone}
+    const order ={partId ,perPiecePrice, partName , customerName, customer, quantity, address, phone}
     console.log(order);
 
     if (parseInt(quantity) < parseInt(minimum) || parseInt(quantity) > parseInt(available)) {
