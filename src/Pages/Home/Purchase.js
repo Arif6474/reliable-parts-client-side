@@ -26,13 +26,13 @@ const Purchase = () => {
     const partId = _id;
     const partName = name;
     const customerName = user?.displayName;
-    const customerEmail = user?.email;
+    const customer = user?.email;
     const perPiecePrice= price ; 
     const quantity = event.target.quantity.value;
     const address = event.target.address.value;
     const phone = event.target.phone.value;
 
-    const order ={partId ,perPiecePrice, partName , customerName, customerEmail, price, quantity, address, phone}
+    const order ={partId ,perPiecePrice, partName , customerName, customer, price, quantity, address, phone}
     console.log(order);
 
     if (parseInt(quantity) < parseInt(minimum) || parseInt(quantity) > parseInt(available)) {
