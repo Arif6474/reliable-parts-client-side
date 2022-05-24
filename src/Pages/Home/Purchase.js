@@ -1,28 +1,62 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
 const Purchase = () => {
   const [user] = useAuthState(auth);
   const { partId } = useParams();
   const [partDetails, setPartDetails] = useState({});
-  const { name, price, available, minimum, description } = partDetails;
+  const {_id, name, price, available, minimum, description } = partDetails;
+  const [quantityError , setQuantityError] = useState('');
   useEffect(() => {
     const url = `http://localhost:5000/part/${partId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+      
         setPartDetails(data);
       });
   }, [partId, partDetails]);
 
   const handleOrder = (event) => {
     event.preventDefault();
-    const name = event.target.name.value;
-    const email = event.target.email.value;
+     
+    const partId = _id;
+    const partName = name;
+    const customerName = user?.displayName;
+    const customerEmail = user?.email;
+    const perPiecePrice= price ; 
+    const quantity = event.target.quantity.value;
+    const address = event.target.address.value;
     const phone = event.target.phone.value;
+
+    const order ={partId ,perPiecePrice, partName , customerName, customerEmail, price, quantity, address, phone}
+    console.log(order);
+
+    if (parseInt(quantity) < parseInt(minimum) || parseInt(quantity) > parseInt(available)) {
+      const errorMessage = <p className='text-red-600 text-center p-2 my-4 mx-14 bg-white rounded text-sm'>At least minimum order quantity {minimum} pieces and Maximum order {available} pieces.</p>
+      setQuantityError(errorMessage);
+  } else{
+      setQuantityError('')
+    const url ='http://localhost:5000/order'
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(order)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+     if(data) {
+       toast.success('Your order has been done successfully')
+     }
+    })
+     
+  }
   };
 
   return (
@@ -80,24 +114,28 @@ const Purchase = () => {
             name="quantity"
             placeholder={`Minimum order Quantity ${minimum}`}
             className="input text-white input-bordered w-full max-w-xs"
+            required
           />
           <input
             type="text"
             name="phone"
             placeholder="Your phone number"
             className="input text-white input-bordered w-full max-w-xs"
+            required
           />
           <input
             type="text"
             name="address"
             placeholder="Your address"
             className="input text-white input-bordered w-full max-w-xs"
+            required
           />
+          {quantityError}
 
           <input
             type="submit"
-            value="Order"
-            className="btn btn-secondary w-full my-4 max-w-xs"
+            value="Order Now"
+            className="btn  bg-lime-500 w-full my-4 text-white font-bold max-w-xs"
           />
         </form>
       </div>
