@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import useParts from '../../hooks/useParts';
 import Part from './Part';
 
 const Parts = () => {
-    const [parts, setParts] = useState([]);
-    useEffect(() => {
-        fetch('parts.json')
-        .then(res => res.json())
-        .then(data => setParts(data))
-
-    },[])
+    const [parts] = useParts();
     return (
         <div>
             <div>
@@ -16,7 +10,7 @@ const Parts = () => {
             </div>
             <div className=" grid grid-cols-1 lg:grid-cols-3 mx-4 gap-4">
             {
-                parts.map(part =><Part part={part}></Part>)
+                parts.map(part =><Part key={part._id} part={part}></Part>)
             }
             </div>
         </div>

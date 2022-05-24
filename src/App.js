@@ -5,6 +5,7 @@ import Blogs from './Pages/Home/Blogs';
 import Home from './Pages/Home/Home';
 import Part from './Pages/Home/Part';
 import Parts from './Pages/Home/Parts';
+import Purchase from './Pages/Home/Purchase';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register';
 import RequireAuth from './Pages/Login/RequireAuth';
@@ -21,6 +22,7 @@ function App() {
        <Route path="blogs" element={<RequireAuth><Blogs></Blogs></RequireAuth>}> </Route>
        <Route path="parts" element={<Parts></Parts>}> </Route>
        <Route path="part" element={<Part></Part>}> </Route>
+       <Route path="part/:partId" element={<RequireAuth><Purchase></Purchase></RequireAuth>}> </Route>
        <Route path="login" element={<Login></Login>}> </Route>
        <Route path="register" element={<Register></Register>}> </Route>
        <Route path="*" element={<Notfound></Notfound>}> </Route>
