@@ -25,9 +25,9 @@ const Register = () => {
       handleSubmit,
     } = useForm();
 
-    if(user  || googleUser){
-        console.log(user);
-        navigate('/')
+    if(token){
+        console.log(token);
+        navigate('/dashboard')
     }
     let signInError;
     if(googleError || error || updateError){

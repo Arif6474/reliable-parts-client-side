@@ -5,6 +5,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWith
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [
@@ -15,8 +16,8 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
       const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
       const [email, setEmail] = useState('');
-      const [signInWithGoogle, googleUser, googleLoading, gError] = useSignInWithGoogle(auth);
-
+      const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+      const [token] =useToken(user || googleUser)
     const {
         register,
         formState: { errors },
@@ -30,14 +31,14 @@ const Login = () => {
       const navigate = useNavigate()
       let location = useLocation();
       let from = location.state?.from?.pathname || "/";
-      if(user || googleUser) {
-          console.log(user, googleUser);
+      if(token) {
+         
           navigate(from, { replace: true });
       }
      
       let LoginError;
-      if(gError || error){
-      LoginError = <p className="text-center text-red-500 pb-2">{gError?.message || error?.message}</p>    
+      if(googleError || error){
+      LoginError = <p className="text-center text-red-500 pb-2">{googleError?.message || error?.message}</p>    
       }
       if(googleLoading || loading){
           return <Loading></Loading>
