@@ -27,7 +27,7 @@ const Register = () => {
 
     if(token){
         console.log(token);
-        navigate('/dashboard')
+        navigate('/')
     }
     let signInError;
     if(googleError || error || updateError){

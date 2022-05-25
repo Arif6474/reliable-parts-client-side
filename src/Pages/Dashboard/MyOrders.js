@@ -1,14 +1,29 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
     const [orders , setOrders] = useState([])
     const [user] =useAuthState(auth);
+    const navigate = useNavigate();
     useEffect(() => {
         if(user){
-            fetch(`http://localhost:5000/order?customer=${user?.email}`)
-            .then(res => res.json())
+            fetch(`http://localhost:5000/order?customer=${user?.email}` , {
+                method: "GET",
+                headers: {
+                  Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+                },
+              })
+            .then(res =>{
+                if (res.status === 401 || res.status === 403) {
+                    signOut(auth);
+                    navigate("/login");
+                    localStorage.removeItem("accessToken");
+                  }
+                return res.json()})
             .then(data => setOrders(data))
         }
     },[user])
