@@ -16,11 +16,20 @@ const Dashboard = () => {
   </div> 
   <div class="drawer-side">
     <label for="dashboard-sidebar" class="drawer-overlay"></label> 
-    <ul class="p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
-      {/* <!-- Sidebar content here --> */}
+    <ul class="p-4 mt-12 overflow-y-auto w-48 bg-base-100 text-base-content">
+    
+    <li><Link to="/dashboard/profile"><button class="btn btn-xs mt-4">My profile</button> </Link></li>
+
+    {!admin && <>
       <li><Link to="/dashboard"><button class="btn btn-xs mt-4"> My Orders</button> </Link></li>
       <li><Link to="/dashboard/review"><button class="btn btn-xs mt-4">Add a review</button> </Link></li>
-     {admin && <li> <Link to="/dashboard/users"><button class="btn btn-xs mt-4">All Users</button> </Link></li>}
+      </>}
+     {admin && <>
+                  <li> <Link to="/dashboard/users"><button class="btn btn-xs mt-4">All Users</button> </Link></li>
+                  <li> <Link to="/dashboard/manage-orders"><button class="btn btn-xs mt-4">Manage Orders</button> </Link></li>
+                  <li> <Link to="/dashboard/manage-products"><button class="btn btn-xs mt-4">Manage Products</button> </Link></li>
+                  <li> <Link to="/dashboard/add-product"><button class="btn btn-xs mt-4">Add Product</button> </Link></li>
+              </> }
     </ul>
   
   </div>
