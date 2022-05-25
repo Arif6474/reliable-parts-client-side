@@ -14,7 +14,7 @@ const MyOrders = () => {
     },[user])
     return (
         <div>
-            <h2>My Orders: {orders.length}</h2>
+            <h2 className="text-center text-xl font-bold text-red-200 mt-4">My Orders</h2>
             <div class="overflow-x-auto">
         <table class="table w-full">
           <thead>
