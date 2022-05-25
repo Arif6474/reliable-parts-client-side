@@ -26,7 +26,7 @@ const MyOrders = () => {
                 return res.json()})
             .then(data => setOrders(data))
         }
-    },[user])
+    },[user , navigate])
     return (
         <div>
             <h2 className="text-center text-xl font-bold text-red-200 mt-4">My Orders</h2>

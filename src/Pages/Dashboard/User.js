@@ -5,7 +5,12 @@ import UserRow from './UserRow';
 
 const User = () => {
     const { isLoading, data: users } = useQuery('user', () =>
-     fetch('http://localhost:5000/user').then(res =>res.json()))
+     fetch('http://localhost:5000/user' ,{
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      }).then(res =>res.json()))
 
      if (isLoading) {
          return <Loading></Loading>
@@ -19,8 +24,8 @@ const User = () => {
       <tr>
         <th></th>
         <th>Email</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Make</th>
+        <th>Remove</th>
       </tr>
     </thead>
     <tbody>
