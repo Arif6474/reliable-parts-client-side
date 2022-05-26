@@ -28,16 +28,16 @@ const AddReview = () => {
     .then(data => {
       console.log(data)
      if(data) {
-       toast.success('Your order has been done successfully')
+       toast.success('Your review has been done successfully')
      }
     })
 
   };
   return (
-    <div>
+    <div className="card bg-slate-700 w-96  my-4 mx-auto">
       <h2 className="text-center text-xl font-bold text-red-200 mt-4">
         {" "}
-        Add a review
+        Add A Review
       </h2>
       <form
         onSubmit={handleReview}
@@ -77,7 +77,7 @@ const AddReview = () => {
         <input
           type="submit"
           value="Submit"
-          className="btn  btn-outline btn-secondary w-full my-4 text-white font-bold max-w-xs"
+          className="btn  btn-outline btn-success w-full my-4 text-white font-bold max-w-xs"
         />
       </form>
     </div>

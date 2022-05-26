@@ -26,7 +26,7 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 
 function App() {
   return (
-    <div >
+    <div  >
      <Navbar></Navbar>
      <Routes>
        <Route path="/" element={<Home></Home>}> </Route>
