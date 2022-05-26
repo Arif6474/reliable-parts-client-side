@@ -60,7 +60,7 @@ const Purchase = () => {
   };
 
   return (
-    <div>
+    
       <div className="card w-96 bg-base-100 my-4 mx-auto shadow-xl">
       <h1 className="text-center text-2xl font-bold text-red-200 mt-8 ">Purchase</h1>
         <div className="card-body">
@@ -139,7 +139,7 @@ const Purchase = () => {
           />
         </form>
       </div>
-    </div>
+    
   );
 };
 

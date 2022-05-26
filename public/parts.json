@@ -4,48 +4,48 @@
       "image": "https://i.ibb.co/cC5BjqD/robert-laursoo-WHPOFFz-Y9g-U-unsplash-ccexpress.jpg",
       "minimum": 100,
       "available": 2550,
-      "name": "Socorro Knox",
-      "description": "Adipisicing aliqua consectetur commodo exercitation elit adipisicing nostrud ad Lorem. Incididunt do ullamco est culpa irure dolore tempor dolor laborum esse. Cupidatat fugiat Lorem irure nisi ea. Deserunt et sunt tempor laboris reprehenderit officia cupidatat dolore. Aliquip culpa sit aute proident ex enim reprehenderit dolor amet sunt.\r\n"
+      "name": "Alternator",
+      "description": "An alternator, as an integral part of every combustion engine vehicle, its main responsibility is to convert chemical energy to electrical energy so that you can charge and replenish the battery in your engine and other electrical components in a car."
     },
     {  
       "price": "$44.99",
       "image": "https://i.ibb.co/6t26h78/rahul-bhogal-9mxvi-B2-BBOE-unsplash-ccexpress.jpg",
       "minimum": 100,
       "available": 1750,
-      "name": "Murphy Moreno",
-      "description": "Cillum cillum sit laborum reprehenderit. Et laborum et est laborum. Qui velit incididunt enim do quis exercitation reprehenderit reprehenderit excepteur occaecat.\r\n"
+      "name": "Radiator",
+      "description": "Radiators work to eliminate heat from the engine. The process begins when the thermostat in the front of the engine detects excess heat. Then coolant and water get released from the radiator and sent through the engine to absorb this heat."
     },
     { 
       "price": "$36.91",
       "image": "https://i.ibb.co/GPxCrFW/jose-pinto-ye-Mp-Sq-F8-Z-8-unsplash-ccexpress.jpg",
       "minimum": 150,
       "available": 2400,
-      "name": "Bates Chandler",
-      "description": "Cillum non voluptate ad elit ad nisi magna sunt. Incididunt non excepteur labore amet quis deserunt exercitation tempor culpa ut do exercitation reprehenderit. Incididunt amet do quis aliqua officia nulla ut non Lorem ipsum reprehenderit.\r\n"
+      "name": "Front Axle",
+      "description": "Front Axle: Located in the front of the vehicle, this axle is responsible for assisting with steering and processing shocks from the uneven surface of the road. They have four main parts, which are the beam, the swivel pin, the track rod, and the stub axle"
     },
     {  
       "price": "$32.49",
       "image": "https://i.ibb.co/PCCzTpy/sam-loyd-qy27-Jns-H9s-U-unsplash-ccexpress.jpg",
       "minimum": 200,
       "available": 5490,
-      "name": "Mccullough Mcintosh",
-      "description": "Enim commodo id dolore ut ipsum occaecat anim duis. Ipsum incididunt in amet anim reprehenderit laboris magna magna amet exercitation Lorem excepteur consectetur. Laborum et tempor nostrud officia laborum id nostrud voluptate culpa proident ut nulla esse.\r\n"
+      "name": "Catalytic Converter",
+      "description": "As part of a car's exhaust system, the catalytic converter helps to reduce air pollution. You will not harm your engine or your car in any way by driving without a catalytic converter. It's not always a good idea to drive around without one, even if it works."
     },
     {
       "price": "$34.04",
       "image": "https://i.ibb.co/GPHzZNF/garett-mizunaka-x-Fjti9r-YILo-unsplash-ccexpress-1.jpg",
       "minimum": 150,
       "available": 2800,
-      "name": "Madge Simpson",
-      "description": "Laborum sit dolore est sunt dolore Lorem officia incididunt consectetur in do est. Laborum excepteur eiusmod culpa amet cillum dolor magna et minim esse dolor reprehenderit. Voluptate ut eiusmod fugiat ex laborum amet minim nostrud. Ex nostrud excepteur irure excepteur consequat elit veniam aliquip et eu reprehenderit ullamco non occaecat. Et Lorem id quis nulla.\r\n"
+      "name": "Muffler",
+      "description": "They aid in dampening vehicle emissions and engine noise. They are made of steel and are coated with aluminum to provide protection from the heat and chemicals released from the exhaust system. Mufflers are used mainly to dissipate the loud sounds created by the engine's pistons and valves"
     },
     { 
       "price": "$29.56",
       "image": "https://i.ibb.co/w0wHc7Y/chad-kirchoff-xe-e69j6-Ds-unsplash-ccexpress.jpg",
       "minimum": 121,
       "available": 122,
-      "name": "Rosalinda Sykes",
-      "description": "Commodo labore minim et esse eiusmod adipisicing enim minim aute laborum proident ad laborum et. Enim ullamco pariatur Lorem commodo minim amet cillum sint in in amet laborum veniam. Consectetur nostrud commodo sint cillum ut occaecat sint ullamco qui ad non aute commodo ex. Proident exercitation labore nulla pariatur dolor quis dolor. Ut eiusmod nulla aute sit fugiat proident aliqua aliqua anim nisi. Irure nisi nisi sit excepteur culpa. Elit sint esse incididunt ex ea culpa quis ex in irure cupidatat.\r\n"
+      "name": "Tailpipe",
+      "description": "All exhaust systems produce six gases as emissions, three of which are toxic, including carbon monoxide, nitrogen oxide, and nitrogen monoxide. While the main task of the exhaust system is to dissipate harmful gases produced by the engine's combustion chamber, it is also tasked with muffling the sound"
     }
   ]
 
