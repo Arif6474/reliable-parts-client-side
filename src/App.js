@@ -23,6 +23,8 @@ import Profile from './Pages/Dashboard/Profile';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import AddProduct from './Pages/Dashboard/AddProduct';
+import Reviews from './Pages/Home/Reviews';
+import UserReview from './Pages/Home/UserReview';
 
 function App() {
   return (
@@ -30,12 +32,13 @@ function App() {
      <Navbar></Navbar>
      <Routes>
        <Route path="/" element={<Home></Home>}> </Route>
-       <Route path="blogs" element={<RequireAuth><Blogs></Blogs></RequireAuth>}> </Route>
+       <Route path="blogs" element={<Blogs></Blogs>}> </Route>
        <Route path="parts" element={<Parts></Parts>}> </Route>
        <Route path="part" element={<Part></Part>}> </Route>
+       <Route path="reviews" element={<Reviews></Reviews>}> </Route>
+       <Route path="user-review" element={<UserReview></UserReview>}> </Route>
        <Route path="part/:partId" element={<RequireAuth><Purchase></Purchase></RequireAuth>}> </Route>
        <Route path="dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
-
        <Route index  element={<MyOrders></MyOrders>}> </Route>
        <Route path="review"  element={<AddReview></AddReview>}> </Route>
        <Route path="profile"  element={<Profile></Profile>}> </Route>

@@ -27,7 +27,7 @@ const AddProduct = () => {
       .then(data => {
         console.log(data)
        if(data) {
-         toast.success('Products has been done successfully')
+         toast.success('Product has been done successfully')
        }
       })
   

@@ -1,6 +1,7 @@
 const { useState, useEffect } = require("react")
 const useParts = () => {
     const [parts , setParts] = useState([]);
+
     useEffect(() => {
         fetch('http://localhost:5000/part')
         .then(res => res.json())

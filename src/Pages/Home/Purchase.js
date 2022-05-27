@@ -108,11 +108,17 @@ const Purchase = () => {
             value={price}
             className="input input-bordered w-full max-w-xs"
           />
+          <input
+            readOnly
+            type="text"
+            value={`Minimum order quantity ${minimum}`}
+            className="input input-bordered w-full max-w-xs"
+          />
 
           <input
             type="text"
             name="quantity"
-            placeholder={`Minimum order Quantity ${minimum}`}
+            placeholder="Order quantity"
             className="input text-white input-bordered w-full max-w-xs"
             required
           />

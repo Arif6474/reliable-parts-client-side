@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
 import UserReview from './UserReview';
 
 const Reviews = () => {
     const [reviews , setReviews] = useState([])
-    const [user] =useAuthState(auth);
    
     useEffect(() => {
-        if(user){
+        
             fetch(`http://localhost:5000/review`)
             .then(res => res.json())
             .then(data => setReviews(data))
-        }
-    },[user])
+        
+    },[])
     return (
         <div>
               <h2 className="text-center text-4xl font-bold text-red-200 my-8 ">Customers Reviews </h2>
