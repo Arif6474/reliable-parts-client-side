@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../../images/about1.jpg'
+
 const About = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
