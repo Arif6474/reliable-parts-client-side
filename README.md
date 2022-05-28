@@ -1,10 +1,6 @@
 # Reliable Parts
-
 Runs the app in the development mode.\
 Open [https://reliable-parts.web.app/](https://reliable-parts.web.app/) to view it in your browser.
-
-# Short description
- Fresh Fruits & Vegetables has developed a comprehensive product range and extensive network to become a global leader in the supply of fresh produce.
 
 ## Features and Functionalities
 - useQuery

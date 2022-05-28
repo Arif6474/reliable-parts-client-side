@@ -3,7 +3,7 @@ const useParts = () => {
     const [parts , setParts] = useState([]);
 
     useEffect(() => {
-        fetch('https://safe-thicket-05218.herokuapp.com/part')
+        fetch('http://localhost:5000/part')
         .then(res => res.json())
         .then(data => setParts(data));
     },[])

@@ -11,7 +11,7 @@ const MyOrders = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if(user){
-            fetch(`https://safe-thicket-05218.herokuapp.com/order?customer=${user?.email}` , {
+            fetch(`http://localhost:5000/order?customer=${user?.email}` , {
                 method: "GET",
                 headers: {
                   Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -30,8 +30,8 @@ const MyOrders = () => {
     return (
         <div>
             <h2 className="text-center text-xl font-bold text-red-200 mt-4">My Orders</h2>
-            <div class="overflow-x-auto">
-        <table class="table w-full">
+            <div className="overflow-x-auto">
+        <table className="table w-full">
           <thead>
             <tr>
               <th></th>

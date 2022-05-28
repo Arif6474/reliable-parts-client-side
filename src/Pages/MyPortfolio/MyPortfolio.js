@@ -16,11 +16,11 @@ const MyPortfolio = () => {
       <h2 className="text-center my-4 text-2xl font-bold text-red-200 mt-4">
         My-Portfolio
       </h2>
-      <div class="hero mt-4 lg:w-2/5 mx-auto rounded mb-4 shadow-md shadow-slate-700 bg-gray-600 ">
-        <div class="hero-content  flex-col lg:flex-row-reverse">
+      <div className="hero mt-4 lg:w-2/5 mx-auto rounded mb-4 shadow-md shadow-slate-700 bg-gray-600 ">
+        <div className="hero-content  flex-col lg:flex-row-reverse">
           <img src={picture} className="rounded-full ml-20 w-36 h-36" alt="" />
           <div>
-            <h1 class="text-2xl mb-2 text-white font-bold">Md Ariful Islam</h1>
+            <h1 className="text-2xl mb-2 text-white font-bold">Md Ariful Islam</h1>
             <p className="text-amber-200">BBA(Management Department)</p>
             <p className="text-amber-200"> at National University</p>
             <p className=" text-amber-200">arifulislam64743@gmail.com</p>

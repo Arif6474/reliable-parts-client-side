@@ -1,9 +1,11 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const Profile = () => {
     const [user] = useAuthState(auth);
+    
 
     const handleProfile = event => {
         event.preventDefault();
@@ -19,6 +21,21 @@ const Profile = () => {
   
     const profile ={name,email, education, location, city, phone,linkedin}
     console.log(profile);
+       
+    fetch(`http://localhost:5000/user/${email}` , { 
+        method: 'PUT',
+        headers: { 
+            'Content-Type': 'application/json' },
+        body: JSON.stringify(profile)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        toast.success("Profile updated successfully")
+    })
+
+
+
     }
     return (
         <div className="card bg-slate-700 w-96  my-4 mx-auto">
@@ -46,7 +63,7 @@ const Profile = () => {
           />
           
           <input
-          required
+          
           type="text"
           name="education"
           placeholder="Education"
@@ -54,7 +71,7 @@ const Profile = () => {
           className="input  input-warning input-bordered w-full max-w-xs"
         />
           <input
-          required
+          
           type="text"
           name="location"
           placeholder="Location"
@@ -62,7 +79,7 @@ const Profile = () => {
           className="input  input-warning input-bordered w-full max-w-xs"
         />
           <input
-          required
+          
           type="text"
           name="city"
           placeholder="city"
@@ -70,7 +87,7 @@ const Profile = () => {
           className="input  input-warning input-bordered w-full max-w-xs"
         />
           <input
-          required
+        
           type="text"
           name="phone"
           placeholder="Phone"
@@ -78,7 +95,7 @@ const Profile = () => {
           className="input  input-warning input-bordered w-full max-w-xs"
         />
           <input
-          required
+        
           type="text"
           name="linkedin"
           placeholder="LinkedIn Profile link"

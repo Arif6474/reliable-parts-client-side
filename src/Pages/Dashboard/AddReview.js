@@ -16,7 +16,7 @@ const AddReview = () => {
     const review ={ customerName, customer, description, rating}
     console.log(review);
 
-    const url ='https://safe-thicket-05218.herokuapp.com/review'
+    const url ='http://localhost:5000/review'
     fetch(url, {
       method: 'POST',
       headers: {
@@ -57,7 +57,7 @@ const AddReview = () => {
           value={user?.email}
           className="input  input-warning input-bordered w-full max-w-xs"
         />
-        <select  name="rating" class="select select-warning w-full max-w-xs">
+        <select  name="rating" className="select select-warning w-full max-w-xs">
           <option disabled selected>
             Rating
           </option>
@@ -71,7 +71,7 @@ const AddReview = () => {
           type="text"
           name="description"
           placeholder="Description"
-          class="input input-bordered input-warning input-lg w-full max-w-xs max-h-32"
+          className="input input-bordered input-warning input-lg w-full max-w-xs max-h-32"
         />
         
         <input

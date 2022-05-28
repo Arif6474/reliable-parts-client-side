@@ -40,9 +40,9 @@ function App() {
        <Route path="user-review" element={<UserReview></UserReview>}> </Route>
        <Route path="part/:partId" element={<RequireAuth><Purchase></Purchase></RequireAuth>}> </Route>
        <Route path="dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
-       <Route index  element={<MyOrders></MyOrders>}> </Route>
+       <Route path="orders"  element={<MyOrders></MyOrders>}> </Route>
        <Route path="review"  element={<AddReview></AddReview>}> </Route>
-       <Route path="profile"  element={<Profile></Profile>}> </Route>
+       <Route  index element={<Profile></Profile>}> </Route>
        <Route path="users"  element={<RequireAdmin><User></User></RequireAdmin>}> </Route>
        <Route path="manage-orders"  element={<RequireAdmin><ManageOrders></ManageOrders></RequireAdmin>}> </Route>
        <Route path="manage-products"  element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}> </Route>
