@@ -15,7 +15,7 @@ const AddProduct = () => {
       const products={  name, image, price , minimum ,maximum, description ,}
       console.log(products);
   
-      const url ='http://localhost:5000/part'
+      const url ='https://safe-thicket-05218.herokuapp.com/part'
       fetch(url, {
         method: 'POST',
         headers: {

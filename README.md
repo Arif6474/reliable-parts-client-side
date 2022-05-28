@@ -1,10 +1,22 @@
-# Getting Started with Create React App
+# Reliable Parts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Runs the app in the development mode.\
+Open [https://reliable-parts.web.app/](https://reliable-parts.web.app/) to view it in your browser.
 
-## Available Scripts
+# Short description
+ Fresh Fruits & Vegetables has developed a comprehensive product range and extensive network to become a global leader in the supply of fresh produce.
 
-In the project directory, you can run:
+## Features and Functionalities
+- useQuery
+- React route
+- React spinner
+- authentication(email/password,google, github)
+- React toast
+- Email verification
+- React hook form
+- Mongodb
+- Heroku
+- React bootstrap
 
 ### `npm start`
 
