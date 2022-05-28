@@ -25,6 +25,7 @@ import ManageProducts from './Pages/Dashboard/ManageProducts';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import Reviews from './Pages/Home/Reviews';
 import UserReview from './Pages/Home/UserReview';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 
 function App() {
   return (
@@ -34,8 +35,8 @@ function App() {
        <Route path="/" element={<Home></Home>}> </Route>
        <Route path="blogs" element={<Blogs></Blogs>}> </Route>
        <Route path="parts" element={<Parts></Parts>}> </Route>
-       <Route path="part" element={<Part></Part>}> </Route>
        <Route path="reviews" element={<Reviews></Reviews>}> </Route>
+       <Route path="portfolio" element={<MyPortfolio></MyPortfolio>}> </Route>
        <Route path="user-review" element={<UserReview></UserReview>}> </Route>
        <Route path="part/:partId" element={<RequireAuth><Purchase></Purchase></RequireAuth>}> </Route>
        <Route path="dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>

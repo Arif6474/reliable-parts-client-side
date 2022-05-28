@@ -22,7 +22,7 @@ const Blogs = () => {
     
   </div>
 </div>
-        <div className="card w-96 bg-base-100 my-8 shadow-xl">
+        <div className="card w-96 bg-base-100  mx-auto my-8 shadow-xl">
   <div className="card-body">
     <h2 className="text-xl text-amber-200">What is a unit test?</h2>
     <p className="text-sm">Unit testing is a software development process in which the smallest testable parts of an application, called units, are individually and independently scrutinized for proper operation. This testing methodology is done during the development process by the software developers.</p>
