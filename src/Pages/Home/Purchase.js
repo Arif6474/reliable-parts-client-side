@@ -11,7 +11,7 @@ const Purchase = () => {
   const {_id, name, price, available, minimum, description } = partDetails;
   const [quantityError , setQuantityError] = useState('');
   useEffect(() => {
-    const url = `http://localhost:5000/part/${partId}`;
+    const url = `https://safe-thicket-05218.herokuapp.com/part/${partId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -40,7 +40,7 @@ const Purchase = () => {
       setQuantityError(errorMessage);
   } else{
       setQuantityError('')
-    const url ='http://localhost:5000/order'
+    const url ='https://safe-thicket-05218.herokuapp.com/order'
     fetch(url, {
       method: 'POST',
       headers: {

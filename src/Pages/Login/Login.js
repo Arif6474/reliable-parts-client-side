@@ -54,7 +54,7 @@ const Login = () => {
                 <span className="label-text">Email</span>
               </label>
               <input
-              
+                required
                 type="email"
                 placeholder="Your email"
                 className="input input-bordered w-full max-w-xs"

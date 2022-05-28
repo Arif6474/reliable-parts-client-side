@@ -5,7 +5,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Blogs from './Pages/Home/Blogs';
 import Home from './Pages/Home/Home';
-import Part from './Pages/Home/Part';
 import Parts from './Pages/Home/Parts';
 import Purchase from './Pages/Home/Purchase';
 import Login from './Pages/Login/Login';
@@ -26,6 +25,7 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 import Reviews from './Pages/Home/Reviews';
 import UserReview from './Pages/Home/UserReview';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+
 
 function App() {
   return (

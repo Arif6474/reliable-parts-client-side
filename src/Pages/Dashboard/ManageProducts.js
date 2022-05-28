@@ -6,7 +6,7 @@ import ManageProduct from './ManageProduct';
 const ManageProducts = () => {
     
     const { isLoading, data: parts, refetch} = useQuery('part', () =>
-    fetch('http://localhost:5000/part').then(res =>res.json()))
+    fetch('https://safe-thicket-05218.herokuapp.com/part').then(res =>res.json()))
 
     if (isLoading) {
         return <Loading></Loading>

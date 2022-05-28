@@ -16,7 +16,7 @@ const AddReview = () => {
     const review ={ customerName, customer, description, rating}
     console.log(review);
 
-    const url ='http://localhost:5000/review'
+    const url ='https://safe-thicket-05218.herokuapp.com/review'
     fetch(url, {
       method: 'POST',
       headers: {

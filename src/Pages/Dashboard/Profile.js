@@ -22,7 +22,7 @@ const Profile = () => {
     const profile ={name,email, education, location, city, phone,linkedin}
     console.log(profile);
        
-    fetch(`http://localhost:5000/user/${email}` , { 
+    fetch(`https://safe-thicket-05218.herokuapp.com/user/${email}` , { 
         method: 'PUT',
         headers: { 
             'Content-Type': 'application/json' },
