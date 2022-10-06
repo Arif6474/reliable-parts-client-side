@@ -29,7 +29,7 @@ import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 
 function App() {
   return (
-    <div  >
+    <div className="bg-[#125B50]" >
      <Navbar></Navbar>
      <Routes>
        <Route path="/" element={<Home></Home>}> </Route>
