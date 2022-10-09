@@ -25,15 +25,21 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 import Reviews from './Pages/Home/Reviews';
 import UserReview from './Pages/Home/UserReview';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import Company from './Pages/Company/Company';
+import Contact from './Pages/contactUs/Contact';
+import AllParts from './Pages/Parts/AllParts';
 
 
 function App() {
   return (
-    <div className="bg-[#125B50]" >
+    <div className="bg-[#425F57]" >
      <Navbar></Navbar>
      <Routes>
        <Route path="/" element={<Home></Home>}> </Route>
        <Route path="blogs" element={<Blogs></Blogs>}> </Route>
+       <Route path="company" element={<Company></Company>}> </Route>
+       <Route path="contact" element={<Contact></Contact>}> </Route>
+       <Route path="all-parts" element={<AllParts></AllParts>}> </Route>
        <Route path="parts" element={<Parts></Parts>}> </Route>
        <Route path="reviews" element={<Reviews></Reviews>}> </Route>
        <Route path="portfolio" element={<MyPortfolio></MyPortfolio>}> </Route>
