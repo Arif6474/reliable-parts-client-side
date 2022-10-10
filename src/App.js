@@ -32,7 +32,7 @@ import AllParts from './Pages/Parts/AllParts';
 
 function App() {
   return (
-    <div className="bg-[#425F57]" >
+    <div className="bg-[#0b1834]" >
      <Navbar></Navbar>
      <Routes>
        <Route path="/" element={<Home></Home>}> </Route>

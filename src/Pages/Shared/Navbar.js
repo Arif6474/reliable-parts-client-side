@@ -3,6 +3,7 @@ import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import './Navbar.css'
 const Header = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Header = () => {
   };
     return (
        
-<div   className="navbar text-white  lg:px-16 sticky top-0  bg-[#181f1c]">
+<div   className="navbar text-white  lg:px-16 sticky top-0 ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-primary lg:hidden">

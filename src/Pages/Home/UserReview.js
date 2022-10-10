@@ -3,12 +3,17 @@ import React from 'react';
 const UserReview = ({review}) => {
     const {customerName, description ,rating} = review;
     
-    return (<div className="mx-auto">
-        <div className="card w-96 bg-fuchsia-700 text-primary-content">
+    return (<div className="">
+        <div className="card w-80 h-72 mx-auto bg-[#0c1839] text-primary-content shadow-xl">
   <div className="card-body">
-    <h2 className="text-xl  font-bold text-white">{customerName}</h2>
-    <h2 className="font-bold text-yellow-500">Rating: {rating} stars</h2>
-    <p className="text-lime-200 text-opacity-60">{description.slice(0, 70)}...</p>
+  <div className="avatar">
+  <div className="w-16 mx-auto rounded-full ring ring-[#5fd6ba] ring-offset-base-100 ring-offset-2">
+    <img src="https://placeimg.com/192/192/people" alt="" />
+  </div>
+</div>
+    <h2 className="text-lg  font-semibold text-white text-center">{customerName}</h2>
+    <h2 className="font-medium text-sm text-yellow-500 text-center"><span className="text-white">Rating:</span> {rating} stars</h2>
+    <p className="text-slate-100 font-medium opacity-80 text-sm mb-2 mt-8">{description.slice(0, 120)}</p>
    
   </div>
 </div>

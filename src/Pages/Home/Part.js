@@ -22,17 +22,17 @@ const Part = ({part}) => {
 //   </div>
 // </div>
 <div>
-<div className="rounded-xl  bg-lime-50 mx-auto my-4 lg:w-96">
+<div className="rounded-xl bg-[#0c1839] mx-auto my-4 lg:w-96 shadow-2xl">
   <div className="flex justify-between lg:items-start gap-4  flex-col lg:flex-row">
     <div className="">
     <img src={image} className="w-96    rounded-xl" alt="" />
     </div>
     <div className="p-4 lg:p-0">
      <div className="flex flex-row lg:flex-col lg:justify-start justify-between   lg:gap-0">
-       <h1 className="text-lg font-bold pt-2 opacity-90">{name}</h1>
-      <p className="text-orange-500 font-semibold opacity-80">Price: {price}</p>
+       <h1 className="text-lg font-bold pt-2 text-white opacity-90">{name}</h1>
+      <p className="text-orange-400 font-semibold"><span className="text-white ">Price:</span>  {price}</p>
      </div>
-      <p className="text-start  text-slate-800 font-medium text-sm my-2 opacity-75 lg:w-44 w-80">{description.slice(0 ,60)}...</p>
+      <p className="text-start  text-slate-200 font-medium text-sm my-2 opacity-75 lg:w-44 w-80">{description.slice(0 ,60)}...</p>
       <button onClick={() => navigateToPartDetails(_id)} className="btn btn-secondary btn-sm  text-white font-semibold lg:mt-2">Purchase</button>
     </div>
   </div>

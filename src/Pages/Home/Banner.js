@@ -17,7 +17,7 @@ import picture5 from "../../images/banner/My_project__3_-removebg-preview.png";
 import picture6 from "../../images/banner/My_project__1_-removebg-preview.png";
 const Banner = () => {
   return (
-    <div className="">
+    <div className=" nab-bg">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -39,7 +39,7 @@ const Banner = () => {
         <SwiperSlide><img src={picture2} alt="" className="w-full"/></SwiperSlide>
         <SwiperSlide><img src={picture3} alt="" className="w-full"/></SwiperSlide> */}
         <SwiperSlide>
-          <div class="hero min-h-screen">
+          <div class="hero min-h-screen ">
             <div class="hero-content flex-col  lg:gap-16 lg:flex-row-reverse">
               <div>
                 {" "}
