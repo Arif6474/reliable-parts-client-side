@@ -8,7 +8,7 @@ const Purchase = () => {
   const [user] = useAuthState(auth);
   const { partId } = useParams();
   const [partDetails, setPartDetails] = useState({});
-  const {_id, name, price, available, minimum, description } = partDetails;
+  const {_id, name, price, available, minimum, description, image } = partDetails;
   const [quantityError , setQuantityError] = useState('');
   useEffect(() => {
     const url = `https://safe-thicket-05218.herokuapp.com/part/${partId}`;
@@ -61,79 +61,86 @@ const Purchase = () => {
 
   return (
     
-      <div className="card w-96 bg-base-100 my-4 mx-auto shadow-xl">
-      <h1 className="text-center text-2xl font-bold text-red-200 mt-8 ">Purchase</h1>
-        <div className="card-body">
-          <h2 className="card-title text-white">{name}</h2>
-          <p className="text-orange-400 font-bold">Price: {price}</p>
-          <p>
+    
+    <div className="py-16 flex lg:flex-row flex-col justify-center items-center gap-24 min-h-screen bg-[#062e41]">
+      <div>
+      <div className="card w-80  shadow-xl">
+  <figure><img src={image} alt="Shoes" className="rounded-lg"/></figure>
+  <div className="card-body">
+  <h2 className="card-title text-white">{name}</h2>
+  <p className="text-orange-400 font-semibold"><span className="text-white ">Price:</span>  {price}</p>
+  <p className="text-white font-semibold">
             Available Quantity:{" "}
-            <span className=" text-yellow-500 font-bold">{available}</span>
+            <span className=" text-white font-bold">{available}</span>
           </p>
-          <p>
+          <p className="text-white font-semibold">
             Minimum Order Quantity:{" "}
-            <span className=" text-yellow-500 font-bold">{minimum}</span>
-          </p>
-          <p className=" text-lime-200 text-xs my-4 opacity-75">
-            {description?.slice(0, 160)}...
-          </p>
-        </div>
-        <form
+            <span className=" text-white font-bold">{minimum}</span>
+        </p>
+         <p className=" text-white text-xs my-4 opacity-75">
+            {description?.slice(0, 180)}...
+         </p>
+  </div>
+</div>
+      </div>
+      <div>
+      <h1 className="text-center text-2xl font-bold w-32 mx-auto  text-white uppercase border-b-2 border-[#ea572b]">Purchase</h1>
+      <form
           onSubmit={handleOrder}
-          className="grid grid-cols-1 gap-4 mt-4 justify-items-center"
+          className="grid grid-cols-1 lg:grid-cols-1 gap-4 mt-4 w-96 p-6 justify-items-center"
         >
           <input
             readOnly
             type="text"
             name="name"
             value={user?.displayName}
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full bg-[#103e53] text-white "
           />
           <input
             readOnly
             type="email"
             name="email"
             value={user?.email}
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full bg-[#103e53] text-white  "
           />
           <input
             readOnly
             type="text"
             value={name}
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full bg-[#103e53] text-white"
           />
           <input
             readOnly
             type="text"
             value={price}
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full bg-[#103e53] text-white"
           />
           <input
             readOnly
             type="text"
             value={`Minimum order quantity ${minimum}`}
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full bg-[#103e53] text-white "
           />
 
           <input
             type="text"
             name="quantity"
             placeholder="Order quantity"
-            className="input text-white input-bordered w-full max-w-xs"
+            className="input  input-bordered w-full bg-[#103e53] text-white"
             required
           />
           <input
             type="text"
             name="phone"
             placeholder="Your phone number"
-            className="input text-white input-bordered w-full max-w-xs"
+            className="input  input-bordered w-full bg-[#103e53] text-white"
             required
           />
           <input
             type="text"
             name="address"
             placeholder="Your address"
-            className="input text-white input-bordered w-full max-w-xs"
+            className="input text-white input-bordered w-full bg-[#103e53]"
             required
           />
           {quantityError}
@@ -141,11 +148,12 @@ const Purchase = () => {
           <input
             type="submit"
             value="Order Now"
-            className="btn  bg-lime-500 w-full my-4 text-white font-bold max-w-xs"
+            className="btn  bg-lime-500 hover:bg-lime-700 w-full border-none my-4 text-white font-bold "
           />
         </form>
+
       </div>
-    
+    </div>
   );
 };
 
