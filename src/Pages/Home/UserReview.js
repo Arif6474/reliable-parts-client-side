@@ -4,7 +4,7 @@ const UserReview = ({review}) => {
     const {customerName, description ,rating} = review;
     
     return (<div className="">
-        <div className="card w-80 h-72 mx-auto bg-[#0c1839] text-primary-content shadow-xl">
+        <div className="card w-80 h-72 mx-auto bg-[#0c1839] text-primary-content shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110">
   <div className="card-body">
   <div className="avatar">
   <div className="w-16 mx-auto rounded-full ring ring-[#5fd6ba] ring-offset-base-100 ring-offset-2">
