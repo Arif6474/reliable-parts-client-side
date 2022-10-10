@@ -33,7 +33,7 @@ const Part = ({part}) => {
       <p className="text-orange-400 font-semibold"><span className="text-white ">Price:</span>  {price}</p>
      </div>
       <p className="text-start  text-slate-200 font-medium text-sm my-2 opacity-75 lg:w-44 w-80">{description.slice(0 ,60)}...</p>
-      <button onClick={() => navigateToPartDetails(_id)} className="btn btn-secondary btn-sm  text-white font-semibold lg:mt-2">Purchase</button>
+      <button onClick={() => navigateToPartDetails(_id)} className="btn bg-[#1ca9b1] hover:bg-[#057177] btn-sm border-none text-white font-semibold lg:mt-2">Purchase</button>
     </div>
   </div>
 </div>

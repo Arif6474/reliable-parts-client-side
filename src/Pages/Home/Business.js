@@ -33,7 +33,7 @@ const Business = () => {
         />
       </div>
       <div className="p-8">
-        <h1 className="text-2xl font-bold text-white ">Our Business</h1>
+        <h1 className="text-center text-2xl font-bold w-44  text-white uppercase border-b-2 border-[#ea572b] ">Our Business</h1>
         <p className="py-4 text-slate-200 font-medium opacity-80 lg:w-[550px]">
           RP (reliable parts) is constantly involved in the evaluation and
           innovation of production technologies. For both existing and new
