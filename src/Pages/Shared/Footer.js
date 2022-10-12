@@ -2,8 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer-bg mt-20">
-      <footer className="footer p-10   text-white">
+    <div  className="footer-bg mt-20 ">
+      <footer data-aos="zoom-in" 
+    data-aos-easing="linear"
+    data-aos-duration="2000" className="footer p-10   text-white">
         <div>
           <span className="footer-title">Products</span>
           <a className="link link-hover">Branding</a>
@@ -19,11 +21,11 @@ const Footer = () => {
           <a className="link link-hover">Press kit</a>
         </div>
         <div>
-          <span className="footer-title">Company</span>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <span className="footer-title">Parts</span>
+          <a className="link link-hover">Auto parts</a>
+          <a className="link link-hover">Motor parts</a>
+          <a className="link link-hover">Car parts</a>
+          <a className="link link-hover">Engine</a>
         </div>
         <div>
           <span className="footer-title">Legal</span>
