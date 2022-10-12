@@ -19,8 +19,8 @@ const Header = () => {
 <div   className="navbar text-white  lg:px-16 sticky top-0 bg-[#050e22] ">
   <div className="navbar-start">
     <div className="dropdown ">
-      <label tabIndex={0} className="btn btn-primary lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      <label tabIndex={0} className="btn btn-neutral btn-sm p-2 mx-2 lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5  text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabIndex={0} className="menu menu-compact font-bold dropdown-content text-white mt-3 p-2 shadow bg-[#181f1c] rounded-box w-52">
       <NavLink 
@@ -50,17 +50,12 @@ const Header = () => {
             isActive ? "font-sans w-[80px] font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
           }
           as={Link} to="/contact">Contact us</NavLink>
+           <NavLink 
+            className={({ isActive }) =>
+            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+          }
+          as={Link} to="/about">About us</NavLink>
 
-      <li className=" font-sans -mt-1 font-medium" tabIndex={0}>
-        <a>
-        About us
-          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-        </a>
-        <ul className="p-2 bg-primary">
-          <li className=" font-sans font-medium text-white"><a>Submenu 2</a></li>
-          <li className=" font-sans font-medium text-white"><a>Submenu 2</a></li>
-        </ul>
-      </li>
       </ul>
     </div>
     <Link to='/' className="lg:text-2xl font-medium text-[#dde9e9]   font-sans">Reliable Parts</Link>
@@ -94,17 +89,13 @@ const Header = () => {
             isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
           }
           as={Link} to="/contact">Contact us</NavLink>
+      <NavLink 
+            className={({ isActive }) =>
+            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+          }
+          as={Link} to="/about">About us</NavLink>
 
-      <li className=" font-sans -mt-1 font-medium" tabIndex={0}>
-        <a>
-        About us
-          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-        </a>
-        <ul className="p-2 bg-primary">
-          <li className=" font-sans font-medium text-white"><a>Submenu 2</a></li>
-          <li className=" font-sans font-medium text-white"><a>Submenu 2</a></li>
-        </ul>
-      </li>
+    
     </ul>
   </div>
   <div className="navbar-end">

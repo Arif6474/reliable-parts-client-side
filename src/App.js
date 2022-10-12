@@ -28,6 +28,7 @@ import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Company from './Pages/Company/Company';
 import Contact from './Pages/contactUs/Contact';
 import AllParts from './Pages/Parts/AllParts';
+import About from './Pages/Home/About';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
        <Route path="blogs" element={<Blogs></Blogs>}> </Route>
        <Route path="company" element={<Company></Company>}> </Route>
        <Route path="contact" element={<Contact></Contact>}> </Route>
+       <Route path="about" element={<About></About>}> </Route>
        <Route path="all-parts" element={<AllParts></AllParts>}> </Route>
        <Route path="parts" element={<Parts></Parts>}> </Route>
        <Route path="reviews" element={<Reviews></Reviews>}> </Route>
