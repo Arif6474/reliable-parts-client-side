@@ -8,7 +8,7 @@ const Part = ({ part }) => {
     navigate(`/part/${id}`);
   };
   return (
-    <div className="rounded-xl bg-[#094159] mx-auto my-4 lg:w-96  shadow-lg hover:shadow-blue-800 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110">
+    <div className="rounded-xl bg-[#094159] mx-auto my-4 lg:w-96 w-80 shadow-lg hover:shadow-blue-800 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110">
       <div className="flex justify-between lg:items-start gap-4  flex-col lg:flex-row">
         <div data-aos="zoom-in" 
     data-aos-easing="linear"
@@ -24,7 +24,7 @@ const Part = ({ part }) => {
               <span className="text-white ">Price:</span> {price}
             </p>
           </div>
-          <p className="text-start  text-slate-200 font-medium text-sm my-2 opacity-75 lg:w-44 w-80">
+          <p className="text-start  text-slate-200 font-medium text-sm my-2 opacity-75 lg:w-44 w-72">
             {description.slice(0, 60)}...
           </p>
           <button
