@@ -6,7 +6,7 @@ const About = () => {
       <div className="p-8">
         <h1 data-aos="flip-left" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="text-center text-2xl font-bold w-32 text-white uppercase border-b-2 border-[#ea572b]  ">About Us</h1>
+    data-aos-duration="1500" className="text-center text-2xl font-bold w-32 text-white uppercase border-b-2 border-[#ea572b]  ">About Us</h1>
         <p className="py-4 text-slate-200 font-medium opacity-80 lg:w-[550px]">
           RP (reliable parts) is constantly involved in the evaluation and
           innovation of production technologies. For both existing and new
@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div data-aos="zoom-in" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="max-w-lg p-8 sm:max-w-sm rounded-lg  ">
+    data-aos-duration="1500" className="max-w-lg p-8 sm:max-w-sm rounded-lg  ">
         <img
           src={
             "https://i.ibb.co/PCCzTpy/sam-loyd-qy27-Jns-H9s-U-unsplash-ccexpress.jpg"

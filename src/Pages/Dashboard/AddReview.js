@@ -66,6 +66,7 @@ const AddReview = () => {
           <option>3</option>
           <option>4</option>
           <option>5</option>
+         
         </select>
         <input
           type="text"

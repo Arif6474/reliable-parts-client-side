@@ -25,7 +25,7 @@ const Business = () => {
     <div className="flex flex-col-reverse lg:flex-row justify-center items-center lg:gap-20 my-24">
        <div data-aos="zoom-in" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="max-w-lg p-4 sm:max-w-sm rounded-lg  ">
+    data-aos-duration="1500" className="max-w-lg p-4 sm:max-w-sm rounded-lg  ">
         <img
           src={
             "https://i.ibb.co/c3NQF2h/milan-degraeve-a-Vj-PXwt3-HYM-unsplash.jpg"
@@ -37,7 +37,7 @@ const Business = () => {
       <div className="p-8">
         <h1 data-aos="flip-right" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="text-center text-2xl font-bold w-44  text-white uppercase border-b-2 border-[#ea572b] ">Our Business</h1>
+    data-aos-duration="1500" className="text-center text-2xl font-bold w-44  text-white uppercase border-b-2 border-[#ea572b] ">Our Business</h1>
         <p className="py-4 text-slate-200 font-medium opacity-80 lg:w-[550px]">
           RP (reliable parts) is constantly involved in the evaluation and
           innovation of production technologies. For both existing and new

@@ -13,7 +13,7 @@ const Reviews = () => {
     <div className="my-24">
       <h2 data-aos="zoom-in" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="text-center text-2xl font-bold w-56 mx-auto text-white uppercase border-b-2 border-[#ea572b]">
+    data-aos-duration="1500" className="text-center text-2xl font-bold w-56 mx-auto text-white uppercase border-b-2 border-[#ea572b]">
         What clients say
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3  my-8 gap-4">

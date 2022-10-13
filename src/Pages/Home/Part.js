@@ -12,7 +12,7 @@ const Part = ({ part }) => {
       <div className="flex justify-between lg:items-start gap-4  flex-col lg:flex-row">
         <div data-aos="zoom-in" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="p-4 lg:p-0">
+    data-aos-duration="1500" className="p-4 lg:p-0">
           <img src={image} className="w-96     rounded-xl" alt="" />
         </div>
         <div className="p-4 lg:p-0">

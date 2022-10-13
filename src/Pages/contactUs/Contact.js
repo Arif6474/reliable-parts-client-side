@@ -18,8 +18,8 @@ const Contact = () => {
     <div className=" lg:w-96 w-80 my-8 contact-body contact-div  p-4 shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110 ">
     <h1 data-aos="zoom-in-up" 
       data-aos-easing="linear"
-      data-aos-duration="2000"
-       className="text-3xl font-bold text-white text-center mb-4">Get in touch</h1>
+      data-aos-duration="1500"
+       className="text-3xl font-bold text-white text-center mb-4">Get In Touch</h1>
     <div className="flex flex-row items-center h-10">
     <img data-aos="zoom-in-down" 
       data-aos-easing="linear"
@@ -43,11 +43,11 @@ const Contact = () => {
     <div className="flex flex-row items-center h-10">
     <img data-aos="zoom-in-down" 
       data-aos-easing="linear"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
        src={email} alt="" className="rounded-full w-6 h-6" /> 
     <p data-aos="zoom-in"  
     data-aos-easing="linear"
-    data-aos-duration="2000"
+    data-aos-duration="1500"
      className=" text-white pl-2 ">  arifulislam64743@gmail.com</p>
     </div>
     </div>
@@ -59,7 +59,7 @@ const Contact = () => {
       >
         <div className="grid grid-col lg:grid-cols-2 gap-4 mt-4 justify-items-center">
         <input
-        data-aos="zoom-in-down" 
+        data-aos="zoom-in" 
         data-aos-easing="linear"
         data-aos-duration="1500"
           required
@@ -69,7 +69,7 @@ const Contact = () => {
           className="input   input-bordered w-full max-w-xs"
         />
         <input
-        data-aos="zoom-in-down" 
+        data-aos="zoom-in" 
         data-aos-easing="linear"
         data-aos-duration="1500"
           required
@@ -95,7 +95,7 @@ const Contact = () => {
         <input
         data-aos="flip-right" 
         data-aos-easing="linear"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
           type="submit" value="Send"
           className="rounded bg-[#2793ab] hover:bg-[#1e7b90] lg:my-16 px-4 py-2 text-white  font-bold w-full lg:w-2/3"
         />

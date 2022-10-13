@@ -6,16 +6,16 @@ const Serve = ({back , serveTitle , details , image}) => {
   <div className="card-body ">
     <h2  data-aos="flip-left" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className=" text-center text-white text-3xl font-bold">{serveTitle}</h2>
+    data-aos-duration="1500" className=" text-center text-white text-3xl font-bold">{serveTitle}</h2>
    <div className="flex mx-auto my-4 items-center">
     <div data-aos="fade-up-right" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="max-w-xs">
+    data-aos-duration="1500" className="max-w-xs">
     <img  src={image} alt="" className=" w-12 h-12 rounded-full" />
     </div>
    <p data-aos="fade-up-left" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="  text-2xl mx-4 text-yellow-200 font-bold">{details}</p>
+    data-aos-duration="1500" className="  text-2xl mx-4 text-yellow-200 font-bold">{details}</p>
    </div>
    
   </div>

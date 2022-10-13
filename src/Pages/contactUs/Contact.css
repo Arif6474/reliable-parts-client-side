@@ -4,7 +4,7 @@
     
   }
   .contact-div{
-    background: #094159;
+    background: #0c1839;
     border-radius: 20px;
     
 
@@ -38,7 +38,7 @@
       }
      .box-div2 {
         
-        background: #094159;
+        background: #0c1839;
         border-radius: 15px;
        
         transition: all ease 0.2s;
@@ -48,7 +48,7 @@
         box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);            
       }
       .box2{
-        box-shadow: inset 0px 5px 10px 0px rgba(0,255,255,0.7);
+        box-shadow: inset 0px 5px 10px 0px rgba(10, 34, 80, 0.7);
       }
       .box1:hover{
         transform: translateY(-5px);
@@ -56,5 +56,5 @@
       }
       .box2:hover{
         transform: translateY(5px);
-        box-shadow: inset 0px 10px 20px 2px rgba(0,255,255,0.7);
+        box-shadow: inset 0px 10px 20px 2px rgba(15, 35, 92, 0.7);
       }

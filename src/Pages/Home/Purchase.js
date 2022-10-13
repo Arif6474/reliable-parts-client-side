@@ -67,7 +67,7 @@ const Purchase = () => {
       <div className="card w-80 p-4 shadow-xl">
   <figure><img data-aos="zoom-in" 
     data-aos-easing="linear"
-    data-aos-duration="2000" src={image} alt="Shoes" className="rounded-lg"/></figure>
+    data-aos-duration="1500" src={image} alt="Shoes" className="rounded-lg"/></figure>
   <div className="card-body">
   <h2 className="card-title text-white">{name}</h2>
   <p className="text-orange-400 font-semibold"><span className="text-white ">Price:</span>  {price}</p>
@@ -88,7 +88,7 @@ const Purchase = () => {
       <div>
       <h1 data-aos="flip-left" 
     data-aos-easing="linear"
-    data-aos-duration="2000" className="text-center text-2xl font-bold w-32 mx-auto  text-white uppercase border-b-2 border-[#ea572b]">Purchase</h1>
+    data-aos-duration="1500" className="text-center text-2xl font-bold w-32 mx-auto  text-white uppercase border-b-2 border-[#ea572b]">Purchase</h1>
       <form
           onSubmit={handleOrder}
           className="grid grid-cols-1 lg:grid-cols-1 gap-4 mt-4 lg:w-96 w-80 p-6 justify-items-center"
@@ -151,7 +151,7 @@ const Purchase = () => {
 
           <input data-aos="zoom-in" 
     data-aos-easing="linear"
-    data-aos-duration="2000"
+    data-aos-duration="1500"
             type="submit"
             value="Order Now"
             className="btn  bg-lime-500 hover:bg-lime-700 w-full border-none my-4 text-white font-bold "
