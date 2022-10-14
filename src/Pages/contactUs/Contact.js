@@ -48,7 +48,7 @@ const Contact = () => {
     <p data-aos="zoom-in"  
     data-aos-easing="linear"
     data-aos-duration="1500"
-     className=" text-white pl-2 ">  arifulislam64743@gmail.com</p>
+     className=" text-white pl-2 ">arifulislam64743@gmail.com</p>
     </div>
     </div>
     <div className=" lg:w-[500px] w-80 box-body box-div2 box2 p-4">
