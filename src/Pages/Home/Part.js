@@ -20,7 +20,7 @@ const Part = ({ part }) => {
             <h1 className="text-lg font-bold pt-2 text-white opacity-90">
               {name}
             </h1>
-            <p className="text-orange-400 font-semibold">
+            <p className="text-amber-400 font-semibold">
               <span className="text-white ">Price:</span> {price}
             </p>
           </div>

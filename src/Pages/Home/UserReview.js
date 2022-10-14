@@ -1,7 +1,7 @@
 import React from "react";
 
 const UserReview = ({ review }) => {
-  const { customerName, description, rating } = review;
+  const { customerName, description } = review;
 
   return (
     <div className="">
