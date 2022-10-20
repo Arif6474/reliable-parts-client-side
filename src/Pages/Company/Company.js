@@ -46,12 +46,12 @@ const Company = () => {
           </p>
         </div>
         <div className="lg:p-8 mt-4">
-            <img src={company} alt="" className="w-[450px] h-[380px]"/>
+            <img src={company} alt="" className="w-[450px] h-[380px] transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110"/>
         </div>
       </div>
       <div className="flex justify-center items-center gap-4 p-8 lg:flex-row flex-col-reverse">
       <div className="lg:p-8 mt-4">
-            <img src={company2} alt="" className="w-[450px] h-[380px]"/>
+            <img src={company2} alt="" className="w-[450px] h-[380px] transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110"/>
         </div>
         <div className="text-white space-y-4">
             <h1 className="font-semibold text-2xl">The Motor parts of RP</h1>
@@ -99,7 +99,7 @@ const Company = () => {
             the world due to its high level of involvement in all parts of the
             automotive industry.
           </p>
-          <p className="lg:w-[650px] opacity-80">
+          <p className="lg:w-[650px] opacity-80 ">
             Some auto parts manufacturers (APMs) or original equipment
             manufacturer (OEM) produce components that other companies use for
             final assembly and sale of automobiles, such as powertrain systems
@@ -129,7 +129,7 @@ const Company = () => {
           </p>
         </div>
         <div className="lg:p-8 mt-4">
-            <img src={company3} alt="" />
+            <img src={company3} alt="" className="transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110"/>
         </div>
       </div>
      </div>
