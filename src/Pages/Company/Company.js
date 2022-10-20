@@ -4,7 +4,7 @@ import company2 from "../../images/company/company2.webp"
 import company3 from "../../images/company/company3.webp"
 const Company = () => {
   return (
-    <div>
+    <div className="">
       <h1 className="font-semibold text-3xl text-center pt-8 text-white">Reliable Parts Manufacturer</h1>
      <div>
      <div className="flex justify-center items-center gap-4 p-8 lg:flex-row flex-col">
@@ -132,6 +132,7 @@ const Company = () => {
         </div>
       </div>
      </div>
+      <div className="lg:p-10">
       <div className="text-white space-y-4 p-8">
             <h1 className="font-semibold text-2xl">The Bike parts of RP</h1>
           <p className=" opacity-80">
@@ -240,6 +241,7 @@ const Company = () => {
             the USA and China.
           </p>
         </div>
+      </div>
     </div>
   );
 };

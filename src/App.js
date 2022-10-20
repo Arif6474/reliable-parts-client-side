@@ -29,6 +29,7 @@ import Company from './Pages/Company/Company';
 import Contact from './Pages/contactUs/Contact';
 import AllParts from './Pages/Parts/AllParts';
 import About from './Pages/Home/About';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
        <Route path="company" element={<Company></Company>}> </Route>
        <Route path="contact" element={<Contact></Contact>}> </Route>
        <Route path="about" element={<About></About>}> </Route>
+       <Route path="about-us" element={<AboutUs></AboutUs>}> </Route>
        <Route path="all-parts" element={<AllParts></AllParts>}> </Route>
        <Route path="parts" element={<Parts></Parts>}> </Route>
        <Route path="reviews" element={<Reviews></Reviews>}> </Route>
