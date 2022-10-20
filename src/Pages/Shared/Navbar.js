@@ -25,34 +25,34 @@ const Header = () => {
       <ul tabIndex={0} className="menu menu-compact font-bold dropdown-content text-white mt-3 p-2 shadow bg-[#181f1c] rounded-box w-52">
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans w-11 font-medium m-2 text-[#6fffff]   text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans w-11 font-medium m-2 text-amber-300   text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/">Home</NavLink>
      
     <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans w-10 font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans w-10 font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/all-parts">Parts</NavLink>
      
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans w-[70px] font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans w-[70px] font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/company">Company</NavLink>
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans w-8 font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans w-8 font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/blogs">Blog</NavLink>
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans w-[80px] font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans w-[80px] font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/contact">Contact us</NavLink>
            <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/about">About us</NavLink>
 
@@ -64,34 +64,34 @@ const Header = () => {
     <ul className="menu menu-horizontal p-0">
     <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/">Home</NavLink>
      
     <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/all-parts">Parts</NavLink>
      
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/company">Company</NavLink>
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/blogs">Blog</NavLink>
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/contact">Contact us</NavLink>
       <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-[#6fffff] text-decoration-none rounded hover:text-[#6fffff] border-[#6fffff] border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-[#6fffff]"
+            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/about">About us</NavLink>
 
