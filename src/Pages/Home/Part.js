@@ -17,7 +17,7 @@ const Part = ({ part }) => {
         </div>
         <div className="p-4 lg:p-0">
           <div className="flex flex-row lg:flex-col lg:justify-start justify-between   lg:gap-0">
-            <h1 className="text-lg font-bold pt-2 text-white opacity-90">
+            <h1 className="text-lg font-bold  text-white opacity-90">
               {name}
             </h1>
             <p className="text-amber-400 font-semibold">
@@ -30,7 +30,7 @@ const Part = ({ part }) => {
           <button
           
             onClick={() => navigateToPartDetails(_id)}
-            className="btn hover:bg-[#0f676c] bg-[#119096] btn-sm border-none text-white font-semibold lg:mt-2"
+            className="btn hover:bg-[#257b13] bg-[#41a317] btn-sm border-none text-white font-semibold lg:mt-2"
           >
             Purchase
           </button>

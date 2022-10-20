@@ -52,7 +52,7 @@ const Header = () => {
           as={Link} to="/contact">Contact us</NavLink>
            <NavLink 
             className={({ isActive }) =>
-            isActive ? "font-sans font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
+            isActive ? "font-sans w-[68px] font-medium m-2 text-amber-300 text-decoration-none rounded hover:text-amber-300 border-amber-300 border-b-2" : "font-sans font-medium text-white m-2 text-decoration-none rounded hover:text-amber-300"
           }
           as={Link} to="/about-us">About us</NavLink>
 

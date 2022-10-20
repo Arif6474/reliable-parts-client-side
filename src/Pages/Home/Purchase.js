@@ -64,7 +64,7 @@ const Purchase = () => {
     
     <div className="py-16 flex lg:flex-row flex-col justify-center items-center gap-24 min-h-screen bg-[#062e41]">
       <div>
-      <div className="card w-80 p-4 shadow-xl">
+      <div className="card w-80 p-4 shadow-lg">
   <figure><img data-aos="zoom-in" 
     data-aos-easing="linear"
     data-aos-duration="1500" src={image} alt="Shoes" className="rounded-lg"/></figure>

@@ -6,10 +6,22 @@ import './Contact.css'
 import address from '../../images/icon/address.png'
 import phone from '../../images/icon/phone.png'
 import email from '../../images/icon/email.png'
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
-
+  const sendEmail = (e) => {
+    e.preventDefault();
+   
+    emailjs.sendForm('service_ophxek9', 'template_jb4t7sv', form.current, 'hHnYdSJzDEdbJHNBv')
+      .then((result) => {
+          if (result) {
+            toast.success('Message sent successfully');
+          }
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
 
     return (
        
@@ -48,15 +60,12 @@ const Contact = () => {
     <p data-aos="zoom-in"  
     data-aos-easing="linear"
     data-aos-duration="1500"
-     className=" text-white pl-2 ">arifulislam64743@gmail.com</p>
+     className=" text-white pl-2 ">reliableparts01@gmail.com</p>
     </div>
     </div>
     <div className=" lg:w-[500px] w-80 box-body box-div2 box2 p-4">
    
-      <form ref={form} 
-       
-        
-      >
+      <form ref={form} onSubmit={sendEmail}>
         <div className="grid grid-col lg:grid-cols-2 gap-4 mt-4 justify-items-center">
         <input
         data-aos="zoom-in" 

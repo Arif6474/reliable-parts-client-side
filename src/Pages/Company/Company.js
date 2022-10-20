@@ -2,6 +2,7 @@ import React from "react";
 import company from "../../images/company/company4.jpg"
 import company2 from "../../images/company/company2.webp"
 import company3 from "../../images/company/company3.webp"
+import CompanyVideo from "./CompanyVideo";
 const Company = () => {
   return (
     <div className="">
@@ -240,6 +241,9 @@ const Company = () => {
             plug that hole, the following are the top 20 auto parts makers in
             the USA and China.
           </p>
+        <div className="hidden lg:block">
+        <CompanyVideo/>
+        </div>
         </div>
       </div>
     </div>

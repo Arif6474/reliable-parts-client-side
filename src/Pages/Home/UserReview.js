@@ -33,7 +33,7 @@ const UserReview = ({ review }) => {
           >
             <span className="text-white">Rating:</span><p className="rating rating-xs pt-2 ml-2">
   <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
-  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
   <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />

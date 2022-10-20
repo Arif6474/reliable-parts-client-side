@@ -39,17 +39,17 @@ const Banner = () => {
         <SwiperSlide><img src={picture2} alt="" className="w-full"/></SwiperSlide>
         <SwiperSlide><img src={picture3} alt="" className="w-full"/></SwiperSlide> */}
         <SwiperSlide>
-          <div class="hero min-h-screen ">
-            <div class="hero-content flex-col  lg:gap-16 lg:flex-row-reverse">
+          <div className="hero min-h-screen ">
+            <div className="hero-content flex-col  lg:gap-16 lg:flex-row-reverse">
               <div>
                 {" "}
-                <img src={picture4} class="lg:max-w-md max-w-sm" alt="" />
+                <img src={picture4} className="lg:max-w-md max-w-sm" alt="" />
               </div>
               <div>
-                <h1 class="lg:text-5xl text-4xl font-bold lg:text-start text-center text-white">
+                <h1 className="lg:text-5xl text-4xl font-bold lg:text-start text-center text-white">
                 Auto parts
                 </h1>
-                <p class="py-6 w-96 text-white font-medium opacity-80">
+                <p className="py-6 w-96 text-white font-medium opacity-80">
                   Auto parts manufacturers in the US have witnessed significant
                   growth over the recent years, thanks to the fact that the US
                   remains one of the world’s largest contributors to the global
@@ -60,16 +60,16 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div class="hero min-h-screen ">
-            <div class="hero-content flex-col lg:gap-16 lg:flex-row-reverse">
+          <div className="hero min-h-screen ">
+            <div className="hero-content flex-col lg:gap-16 lg:flex-row-reverse">
               <div>
-                <img src={picture5} class="lg:max-w-md max-w-sm" alt="" />
+                <img src={picture5} className="lg:max-w-md max-w-sm" alt="" />
               </div>
               <div>
-                <h1 class="lg:text-5xl text-4xl font-bold lg:text-start text-center text-white">
+                <h1 className="lg:text-5xl text-4xl font-bold lg:text-start text-center text-white">
                 Motor parts
                 </h1>
-                <p class="py-6 w-96 text-white font-medium opacity-80">
+                <p className="py-6 w-96 text-white font-medium opacity-80">
                   Auto parts refer to all the components used in automobile
                   vehicles, which mainly includes products for Driveline &
                   Powertrain, Interiors & Exteriors, Electronics, Bodies &
@@ -80,17 +80,17 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div class="hero min-h-screen ">
-            <div class="hero-content flex-col lg:gap-16 lg:flex-row-reverse">
+          <div className="hero min-h-screen ">
+            <div className="hero-content flex-col lg:gap-16 lg:flex-row-reverse">
               <div>
                 {" "}
-                <img src={picture6} class="lg:max-w-md max-w-sm" alt="" />
+                <img src={picture6} className="lg:max-w-md max-w-sm" alt="" />
               </div>
               <div>
-                <h1 class="lg:text-5xl text-4xl font-bold lg:text-start text-center text-white">
+                <h1 className="lg:text-5xl text-4xl font-bold lg:text-start text-center text-white">
                   Car parts
                 </h1>
-                <p class="py-6 w-96 text-white font-medium opacity-80">
+                <p className="py-6 w-96 text-white font-medium opacity-80">
                   Dana Incorporated is one of the largest American worldwide
                   suppliers of drivetrain, sealing, and thermal-management
                   technologies for auto industry. Founded in 1904 and
