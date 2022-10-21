@@ -15,7 +15,7 @@ const Part = ({ part }) => {
     data-aos-duration="1500" className="p-4 lg:p-2 mx-auto">
           <img src={image} className="lg:w-52    rounded-xl" alt="" />
         </div>
-        <div className=" p-4 lg:p-0 lg:mx-auto">
+        <div className=" p-4 lg:pl-4 ">
           <div className="flex flex-row lg:flex-col lg:justify-center justify-between   lg:gap-0">
             <h1 className="text-lg font-bold  text-white opacity-90">
               {name}
