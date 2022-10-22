@@ -134,6 +134,9 @@ const Company = () => {
       </div>
      </div>
       <div className="lg:p-10">
+      <div className="pl-16 hidden lg:block" >
+      <CompanyVideo/>
+      </div>
       <div className="text-white space-y-4 p-8">
             <h1 className="font-semibold text-2xl">The Bike parts of RP</h1>
           <p className=" opacity-80">
@@ -241,9 +244,7 @@ const Company = () => {
             plug that hole, the following are the top 20 auto parts makers in
             the USA and China.
           </p>
-        <div className="hidden lg:block">
-        <CompanyVideo/>
-        </div>
+        
         </div>
       </div>
     </div>

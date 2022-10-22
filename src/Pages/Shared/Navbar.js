@@ -101,9 +101,9 @@ const Header = () => {
   <div className="navbar-end">
 
  {
-       user && <Link to='/dashboard' className=" font-sans font-medium">Dashboard</Link>
+       user && <Link to='/dashboard' className=" font-sans font-medium hover:text-amber-300">Dashboard</Link>
     }
-    {user ? <button onClick={logout} className="btn btn:sm btn-ghost">Sign Out</button> :<Link to="/login" className=" font-sans font-medium">Login</Link>}
+    {user ? <button onClick={logout} className="btn btn:sm btn-ghost hover:text-amber-300">Sign Out</button> :<Link to="/login" className=" font-sans font-medium hover:text-amber-300">Login</Link>}
    
 
   </div>

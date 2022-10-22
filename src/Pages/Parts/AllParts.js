@@ -11,7 +11,7 @@ const AllParts = () => {
     data-aos-easing="linear"
     data-aos-duration="1500" className="text-center text-2xl my-8 font-bold w-32 mx-auto text-white uppercase border-b-2 border-[#ea572b]  ">All Parts</h1>
         </div>
-        <div className=" grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className=" grid grid-cols-1 lg:grid-cols-4 gap-4">
         {
             parts.map(part =><Part key={part._id} part={part}></Part>)
         }

@@ -45,18 +45,18 @@ const Login = () => {
       }
     return (
         <div className="flex h-screen justify-center items-center">
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 bg-[#0c1839] shadow-xl">
         <div className="card-body">
-          <h2 className="text-center text-2xl font-bold text-white">Login</h2>
+         
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text text-white">Email</span>
               </label>
               <input
                 required
                 type="email"
-                placeholder="Your email"
+                placeholder="Email"
                 className="input input-bordered w-full max-w-xs"
                 {...register("email", {
                     required: {
@@ -79,7 +79,7 @@ const Login = () => {
             </div>
             <div className="form-control w-full max-w-xs">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text text-white">Password</span>
                
               </label>
               <input
@@ -104,18 +104,18 @@ const Login = () => {
                 
               </label>
             </div>
-            <p className="font-bold text-warning mb-4" onClick={async () => {
+            <p className=" text-zinc-300 mb-4" onClick={async () => {
           await sendPasswordResetEmail(email);
           toast('Your password has been reset');
         }}>Forget Password?</p>
             {LoginError}
-            <input className="btn btn-accent w-full max-w-xs text-white" type="submit" value="Login" />
+            <input className="btn bg-[#1ac0ba] tracking-wider fon w-full outline-none border-none hover:bg-[#14988f] max-w-xs text-white" type="submit" value="Login" />
           </form>
-          <p><small>New to Reliable Parts? <Link className=" text-lime-400" to="/register">Create an account</Link></small></p>
-          <div className="divider">OR</div>
+          <p><small className="text-slate-100">New to Reliable Parts? <Link className=" ml-4 text-lime-300" to="/register">Create an account</Link></small></p>
+          <div className="divider text-slate-300">or</div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline btn-accent"
+            className="btn btn-outline hover:bg-[#263fe6] hover:border-none  text-white "
           >
             Continue with google
           </button>
