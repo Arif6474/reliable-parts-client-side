@@ -43,17 +43,16 @@ const Register = () => {
     };
     return (
         <div className="flex h-screen justify-center items-center">
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-[#0c1839] shadow-xl">
           <div className="card-body">
-            <h2 className="text-center text-2xl text-white font-bold">Sign Up</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-control w-full max-w-xs">
                 <label className="label">
-                  <span className="label-text">Name</span>
+                  <span className="label-text text-white">Name</span>
                 </label>
                 <input
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Enter your name"
                   className="input input-bordered w-full max-w-xs"
                   {...register("name", {
                       required: {
@@ -70,11 +69,11 @@ const Register = () => {
               </div>
               <div className="form-control w-full max-w-xs">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-white">Email</span>
                 </label>
                 <input
                   type="email"
-                  placeholder="Your email"
+                  placeholder="Enter your email"
                   className="input input-bordered w-full max-w-xs"
                   {...register("email", {
                       required: {
@@ -96,12 +95,12 @@ const Register = () => {
               </div>
               <div className="form-control w-full max-w-xs">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-white">Password</span>
                  
                 </label>
                 <input
                   type="password"
-                  placeholder="Password"
+                  placeholder="Enter your password"
                   className="input input-bordered w-full max-w-xs"
                   {...register("password", {
                       required: {
@@ -120,13 +119,13 @@ const Register = () => {
                 </label>
               </div>
               {signInError}
-              <input className="btn btn-accent w-full max-w-xs text-white" type="submit" value="Sing up" />
+              <input className="btn bg-[#1ac0ba] tracking-wider fon w-full outline-none border-none hover:bg-[#14988f] max-w-xs text-white" type="submit" value="Register" />
             </form>
-            <p><small>Already have an account? <Link className=" text-lime-400" to="/login">Login</Link></small></p>
-            <div className="divider">OR</div>
+            <p><small className="text-slate-100">Already have an account? <Link className="ml-4 text-lime-300" to="/login">Login</Link></small></p>
+            <div className="divider text-slate-100">or</div>
             <button
               onClick={() => signInWithGoogle()}
-              className="btn btn-outline btn-accent"
+              className="btn btn-outline hover:bg-[#263fe6] hover:border-none  text-white"
             >
               Continue with google
             </button>
