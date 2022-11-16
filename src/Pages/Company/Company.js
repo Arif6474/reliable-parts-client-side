@@ -46,12 +46,12 @@ const Company = () => {
           </p>
         </div>
         <div className="lg:p-8 mt-4">
-            <img src={company} alt="" className="w-[450px] h-[380px] transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110"/>
+            <img src={company} alt="" className="w-[450px] h-[380px] transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104"/>
         </div>
       </div>
       <div className="flex justify-center items-center gap-4 p-8 lg:flex-row flex-col-reverse">
       <div className="lg:p-8 mt-4">
-            <img src={company2} alt="" className="w-[450px] h-[380px] transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110"/>
+            <img src={company2} alt="" className="w-[450px] h-[380px] transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104"/>
         </div>
         <div className="text-white space-y-4">
             <h1 className="font-semibold text-2xl">The Motor parts of RP</h1>
@@ -129,7 +129,7 @@ const Company = () => {
           </p>
         </div>
         <div className="lg:p-8 mt-4">
-            <img src={company3} alt="" className="transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110"/>
+            <img src={company3} alt="" className="transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104"/>
         </div>
       </div>
      </div>

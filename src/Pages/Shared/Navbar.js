@@ -58,7 +58,7 @@ const Header = () => {
 
       </ul>
     </div>
-    <Link to='/' className="lg:text-2xl font-medium text-[#dde9e9]   font-sans">Reliable Parts</Link>
+    <Link to='/' className="lg:text-xl font-medium text-white   font-sans">Reliable Parts</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">

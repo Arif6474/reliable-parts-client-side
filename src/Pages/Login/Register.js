@@ -119,7 +119,7 @@ const Register = () => {
                 </label>
               </div>
               {signInError}
-              <input className="btn bg-[#1ac0ba] tracking-wider fon w-full outline-none border-none hover:bg-[#14988f] max-w-xs text-white" type="submit" value="Register" />
+              <input className="btn bg-[#1ac0ba] tracking-wider mt-2 fon w-full outline-none border-none hover:bg-[#14988f] max-w-xs text-white" type="submit" value="Register" />
             </form>
             <p><small className="text-slate-100">Already have an account? <Link className="ml-4 text-lime-300" to="/login">Login</Link></small></p>
             <div className="divider text-slate-100">or</div>

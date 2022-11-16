@@ -5,7 +5,7 @@ const UserReview = ({ review }) => {
 
   return (
     <div className="">
-      <div className="card w-80 h-72 mx-auto bg-[#0c1839] text-primary-content shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110">
+      <div className="card w-80 h-72 mx-auto bg-[#0c1839] text-primary-content shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104">
         <div className="card-body">
           <div className="avatar">
             <div
@@ -18,17 +18,17 @@ const UserReview = ({ review }) => {
             </div>
           </div>
           <h2
-            data-aos="fade-up"
+            data-aos="zoom-in"
             data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
             className="text-lg  font-semibold text-white text-center"
           >
             {customerName}
           </h2>
           <h2
-            data-aos="fade-up"
+            data-aos="zoom-in"
             data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
             className="font-medium text-sm text-yellow-500 text-center"
           >
             <span className="text-white">Rating:</span><p className="rating rating-xs pt-2 ml-2">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Serve = ({back , serveTitle , details , image}) => {
     return (
-        <div className={`card lg:card-side  pt-4 pl-4 mx-auto lg:w-96 w-[320px] ${back} shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110`}>
+        <div className={`card lg:card-side  pt-4 pl-4 mx-auto lg:w-96 w-[320px] ${back} shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104`}>
   <div className="card-body ">
     <h2  data-aos="flip-left" 
     data-aos-easing="linear"

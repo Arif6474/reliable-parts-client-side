@@ -8,7 +8,7 @@ const Part = ({ part }) => {
     navigate(`/part/${id}`);
   };
   return (
-    <div className="rounded-xl bg-[#0c1839] mx-auto my-4 lg:w-60 w-80  shadow-lg hover:shadow-blue-800 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110">
+    <div className="rounded-xl bg-[#0c1839] mx-auto my-4 lg:w-60 w-80  shadow-lg hover:shadow-blue-800 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104">
       <div className="flex justify-between  gap-4  flex-col">
         <div
           data-aos="zoom-in"

@@ -19,7 +19,7 @@ const Parts = () => {
           <div data-aos="fade-up" 
     data-aos-easing="linear"
     data-aos-duration="1500" className=" flex mt-8 items-center justify-center">
-          <Link to="/all-parts" className="font-bold text-xl px-3 py-1 rounded-xl bg-[#104355] hover:bg-[#072c45] text-white shadow-lg transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110 ">All Parts</Link>
+          <Link to="/all-parts" className="font-bold text-xl px-3 py-1 rounded-xl bg-[#104355] hover:bg-[#072c45] text-white shadow-lg transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104 ">All Parts</Link>
           </div>
 
         </div>

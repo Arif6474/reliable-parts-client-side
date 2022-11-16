@@ -27,39 +27,39 @@ const Contact = () => {
        
             <div className=" my-28">
   <div className="flex flex-col lg:flex-row  justify-center lg:gap-32 gap-12 items-center">
-    <div className=" lg:w-96 w-80 my-8 contact-body contact-div  p-4 shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-110 ">
-    <h1 data-aos="zoom-in-up" 
+    <div className=" lg:w-96 w-80 my-8 contact-body contact-div  p-4 shadow-lg hover:shadow-blue-500 transition duration-700 ease-in-out  hover:-translate-y-1 hover:scale-104 ">
+    <h1 data-aos="zoom-in" 
       data-aos-easing="linear"
       data-aos-duration="1500"
        className="text-3xl font-bold text-white text-center mb-4">Get In Touch</h1>
     <div className="flex flex-row items-center h-10">
-    <img data-aos="zoom-in-down" 
+    <img data-aos="fade-up" 
       data-aos-easing="linear"
-      data-aos-duration="1000"
+      data-aos-duration="800"
        src={address} alt="" className="rounded-full w-6 h-6" /> 
-    <p data-aos="fade-down-left"  
+    <p data-aos="fade-up"  
     data-aos-easing="linear"
-    data-aos-duration="1000"
+    data-aos-duration="800"
      className=" text-white  pl-2 ">  Hathazari, Chittagong</p>
     </div>
     <div className="flex flex-row items-center h-10">
-    <img data-aos="zoom-in-down" 
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-       src={phone} alt="" className="rounded-full w-6 h-6" /> 
-    <p data-aos="fade-down-left"  
+    <img data-aos="fade-up"  
     data-aos-easing="linear"
-    data-aos-duration="1500"
+    data-aos-duration="1000"
+       src={phone} alt="" className="rounded-full w-6 h-6" /> 
+    <p data-aos="fade-up"  
+    data-aos-easing="linear"
+    data-aos-duration="1000"
      className=" text-white  pl-2 ">  +8801820082894</p>
     </div>
     <div className="flex flex-row items-center h-10">
-    <img data-aos="zoom-in-down" 
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-       src={email} alt="" className="rounded-full w-6 h-6" /> 
-    <p data-aos="zoom-in"  
+    <img data-aos="fade-up"  
     data-aos-easing="linear"
-    data-aos-duration="1500"
+    data-aos-duration="1200"
+       src={email} alt="" className="rounded-full w-6 h-6" /> 
+    <p data-aos="fade-up"  
+    data-aos-easing="linear"
+    data-aos-duration="1200"
      className=" text-white pl-2 ">reliableparts01@gmail.com</p>
     </div>
     </div>

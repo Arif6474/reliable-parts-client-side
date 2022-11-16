@@ -10,25 +10,24 @@ const Dashboard = () => {
         <div className="drawer drawer-mobile">
   <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content">
-      <h1 className="text-center mt-4 text-2xl font-bold text-amber-200">Welcome to the dashboard</h1>
    <Outlet></Outlet>
    
   </div> 
   <div className="drawer-side">
     <label for="dashboard-sidebar" className="drawer-overlay"></label> 
-    <ul className="p-4 mt-12 overflow-y-auto w-48 bg-base-100 text-base-content">
+    <ul className="p-4 overflow-y-auto w-48 bg-[#0c1839] ">
     
-    <li><Link to="/dashboard/"><button className="btn btn-xs mt-4">My profile</button> </Link></li>
+    <li><Link to="/dashboard/"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]">My profile</button> </Link></li>
 
     {!admin && <>
-      <li><Link to="/dashboard/orders"><button className="btn btn-xs mt-4"> My Orders</button> </Link></li>
-      <li><Link to="/dashboard/review"><button className="btn btn-xs mt-4">Add a review</button> </Link></li>
+      <li><Link to="/dashboard/orders"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]"> My Orders</button> </Link></li>
+      <li><Link to="/dashboard/review"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]">Add a review</button> </Link></li>
       </>}
      {admin && <>
-                  <li> <Link to="/dashboard/users"><button className="btn btn-xs mt-4">All Users</button> </Link></li>
-                  <li> <Link to="/dashboard/manage-orders"><button className="btn btn-xs mt-4">Manage Orders</button> </Link></li>
-                  <li> <Link to="/dashboard/manage-products"><button className="btn btn-xs mt-4">Manage Products</button> </Link></li>
-                  <li> <Link to="/dashboard/add-product"><button className="btn btn-xs mt-4">Add Product</button> </Link></li>
+                  <li> <Link to="/dashboard/users"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]">All Users</button> </Link></li>
+                  <li> <Link to="/dashboard/manage-orders"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]">Manage Orders</button> </Link></li>
+                  <li> <Link to="/dashboard/manage-products"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]">Manage Products</button> </Link></li>
+                  <li> <Link to="/dashboard/add-product"><button className="btn btn-xs mt-4 text-white bg-[#0c1839] hover:bg-[#02091a]">Add Product</button> </Link></li>
               </> }
     </ul>
   
