@@ -15,7 +15,7 @@ const AddProduct = () => {
       const products={  name, image, price , minimum ,maximum, description ,}
       console.log(products);
   
-      const url ='https://safe-thicket-05218.herokuapp.com/part'
+      const url ='https://reliable-parts-server.vercel.app/part'
       fetch(url, {
         method: 'POST',
         headers: {

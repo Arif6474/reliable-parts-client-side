@@ -11,7 +11,7 @@ const MyOrders = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if(user){
-            fetch(`https://safe-thicket-05218.herokuapp.com/order?customer=${user?.email}` , {
+            fetch(`https://reliable-parts-server.vercel.app/order?customer=${user?.email}` , {
                 method: "GET",
                 headers: {
                   Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

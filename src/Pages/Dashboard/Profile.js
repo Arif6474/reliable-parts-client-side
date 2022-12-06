@@ -21,7 +21,7 @@ const Profile = () => {
     const profile = { name, email, education, location, city, phone, linkedin };
     console.log(profile);
 
-    fetch(`https://safe-thicket-05218.herokuapp.com/user/${email}`, {
+    fetch(`https://reliable-parts-server.vercel.app/user/${email}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
