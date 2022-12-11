@@ -15,7 +15,7 @@ const AddProduct = () => {
       const products={  name, image, price , minimum ,maximum, description ,}
       console.log(products);
   
-      const url ='https://reliable-parts-server.vercel.app/part'
+      const url ='https://reliable-parts-server.up.railway.app/part'
       fetch(url, {
         method: 'POST',
         headers: {

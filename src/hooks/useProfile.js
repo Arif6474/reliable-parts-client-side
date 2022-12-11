@@ -10,7 +10,7 @@ const useProfile = () => {
   useEffect(() => {
     const email = user?.email;
    if (email) {
-    fetch(`https://reliable-parts-server.vercel.app/user/${email}`)
+    fetch(`https://reliable-parts-server.up.railway.app/user/${email}`)
     .then(res => res.json())
     .then(data => setProfile(data))
    }

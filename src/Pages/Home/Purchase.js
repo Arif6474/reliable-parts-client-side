@@ -11,7 +11,7 @@ const Purchase = () => {
   const {_id, name, price, available, minimum, description, image } = partDetails;
   const [quantityError , setQuantityError] = useState('');
   useEffect(() => {
-    const url = `https://reliable-parts-server.vercel.app/part/${partId}`;
+    const url = `https://reliable-parts-server.up.railway.app/part/${partId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -40,7 +40,7 @@ const Purchase = () => {
       setQuantityError(errorMessage);
   } else{
       setQuantityError('')
-    const url ='https://reliable-parts-server.vercel.app/order'
+    const url ='https://reliable-parts-server.up.railway.app/order'
     fetch(url, {
       method: 'POST',
       headers: {

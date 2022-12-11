@@ -5,7 +5,7 @@ import UserRow from './UserRow';
 
 const User = () => {
     const { isLoading, data: users , refetch} = useQuery('user', () =>
-     fetch('https://reliable-parts-server.vercel.app/user' ,{
+     fetch('https://reliable-parts-server.up.railway.app/user' ,{
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

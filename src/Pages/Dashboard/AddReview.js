@@ -16,7 +16,7 @@ const AddReview = () => {
     const review ={ customerName, customer, description, rating}
     console.log(review);
 
-    const url ='https://reliable-parts-server.vercel.app/review'
+    const url ='https://reliable-parts-server.up.railway.app/review'
     fetch(url, {
       method: 'POST',
       headers: {

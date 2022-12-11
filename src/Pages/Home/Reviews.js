@@ -5,7 +5,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch(`https://reliable-parts-server.vercel.app/review`)
+    fetch(`https://reliable-parts-server.up.railway.app/review`)
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

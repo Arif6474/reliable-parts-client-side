@@ -5,7 +5,7 @@ const ManageProduct = ({part , refetch}) => {
     const {_id, name, price , image , available, minimum, description} = part;
 
     const handleDeleteProduct = (id) => {
-         fetch(`https://reliable-parts-server.vercel.app/part/${id}` ,{
+         fetch(`https://reliable-parts-server.up.railway.app/part/${id}` ,{
              method: 'DELETE',
 
          }).then(res => res.json())
